@@ -1,7 +1,29 @@
-create first section and put the text Hero section inside
-create second section and put the text Services section inside
-create third section and put the text Works section inside
-create fourth section and put the text About section inside
-create fifth section and put the text Latest news section inside
-create sixth section and put the text Testimonials section inside
-create seventh section and put the text Contact section inside
+Services headings:
+
+Inside the section containing the h2 heading Services, add these elements right after the h2:
+create a level 3 heading with text Design & Concept
+create a level 3 heading with text Digital Strategy
+create a level 3 heading with text Content Strategy
+create a level 3 heading with text UX Design
+create a level 3 heading with text Web Development
+create a level 3 heading with text Social Media
+
+
+Works headings:
+
+Inside the section containing the h2 heading Works:
+in the first article, replace the text with a level 3 heading with text Interior Design
+in the second article, replace the text with a level 3 heading with text Web Development
+in the third article, replace the text with a level 3 heading with text Personal Brand
+About Us headings:
+
+Inside the section containing the h2 heading About Us, after the h2 heading, create these elements in this order:
+a level 3 heading with text Who are we
+a level 3 heading with text Our culture
+a level 3 heading with text How we work
+Latest news headings:
+
+Inside the section containing the h2 heading Latest news:
+in the first article replace the text with a level 3 heading with text Hoc loco tenere se Triarius non potuit.
+in the second article replace the text with a level 3 heading with text Ut alios omittam, hunc appello, quem ille unum secutus est.
+in the third article replace the text with a level 3 heading with text Bestiarum vero nullum iudicium puto.
