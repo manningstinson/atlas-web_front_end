@@ -7,90 +7,74 @@
 	--text-color: var(--color-black);
 	--font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
 		sans-serif;
-	--font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--font-size-small: 1.2rem;
 	--font-size-medium: 1.6rem;
 	--font-size-large: 1.8rem;
 	--font-size-x-large: 2.3rem;
 	--font-size-xx-large: 4.8rem;
-	--font-weight-regular: 400; /* New custom property */
-	--font-weight-bold: 700; /* New custom property */
-	--line-height-small: 1.2; /* New custom property */
-	--line-height-base: 1.5; /* New custom property */
-	--line-height-big: 1.8; /* New custom property */
-	--section-header-align: center; /* New custom property */
-	--section-tagline-transform: uppercase; /* New custom property */
-	--section-title-margin: 0; /* New custom property */
-	--section-title-color: var(--color-black); /* New custom property */
+	--font-weight-regular: 400;
+	--font-weight-bold: 700;
+	--line-height-small: 1.2;
+	--line-height-base: 1.5;
+	--line-height-big: 1.8;
+	--section-header-align: center;
+	--section-tagline-transform: uppercase;
+	--section-title-margin: 0;
+	--section-title-color: var(--color-black);
 }
-
 html {
 	scroll-behavior: smooth;
-	font-size: 62.5%; /* 62.5% of the default font size (16px) = 10px */
+	font-size: 62.5%;
 }
-
 body {
 	font-family: var(--font-family-base);
 	font-size: var(--font-size-medium);
-	color: var(--text-color);
-	font-weight: var(--font-weight-regular); /* Set font weight to regular */
-	line-height: var(--line-height-base); /* Set minimum height of line boxes */
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height-base);
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.section-tagline,
+.section-title {
 	font-family: var(--font-family-title);
-	font-weight: var(--font-weight-bold); /* Set font weight to bold */
+	font-weight: var(--font-weight-bold);
 }
-
-a {
+body,
+a:link {
 	color: var(--text-color);
-	text-decoration: none; /* Remove text decoration */
 }
-
-.section-header {
-	text-align: var(--section-header-align); /* Set horizontal alignment */
+a:link {
+	text-decoration: none;
 }
-
+a:visited {
+	font-style: italic;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	background-color: var(--color-light-grey);
+}
 .visually-hidden {
 	display: none;
 }
-
 .card-category,
 .section-tagline {
 	color: var(--color-primary);
 }
-
 .section-tagline {
-	font-family: var(--font-family-title);
-	font-weight: var(--font-weight-bold);
 	text-transform: var(--section-tagline-transform);
 }
-
 .section-title {
+	font-size: var(--font-size-xx-large);
 	margin: var(--section-title-margin);
 	color: var(--section-title-color);
-	font-family: var(--font-family-title);
-	font-size: var(--font-size-xx-large);
-	font-weight: var(--font-weight-bold);
 }
-
-a[href]:not([href^="javascript:void(0)"]) {
-	font-style: italic;
-}
-
-a[href]:visited {
-	color: var(--text-color);
-}
-
-a[href]:hover {
-	text-decoration: underline;
-}
-
-a[href]:active {
-	background-color: var(--color-light-grey);
+.section-header {
+	text-align: var(--section-header-align);
 }
