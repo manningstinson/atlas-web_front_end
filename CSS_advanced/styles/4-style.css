@@ -41,3 +41,7 @@ h6 {
 		--font-family-title
 	); /* Set font-family for all heading tags */
 }
+
+.visually-hidden {
+	display: none; /* Set display to none for all elements with the class visually-hidden */
+}
