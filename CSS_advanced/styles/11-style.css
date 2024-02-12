@@ -19,6 +19,7 @@
 	--line-height-base: 1.5; /* New custom property */
 	--line-height-big: 1.8; /* New custom property */
 	--section-header-align: center; /* New custom property */
+	--section-tagline-transform: uppercase; /* New custom property */
 }
 
 html {
@@ -53,12 +54,6 @@ a {
 	text-align: var(--section-header-align); /* Set horizontal alignment */
 }
 
-.section-tagline {
-	font-family: var(--font-family-title);
-	font-weight: var(--font-weight-bold);
-	text-transform: uppercase;
-}
-
 .visually-hidden {
 	display: none;
 }
@@ -66,4 +61,10 @@ a {
 .card-category,
 .section-tagline {
 	color: var(--color-primary);
+}
+
+.section-tagline {
+	font-family: var(--font-family-title);
+	font-weight: var(--font-weight-bold);
+	text-transform: var(--section-tagline-transform);
 }
