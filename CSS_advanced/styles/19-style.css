@@ -10,14 +10,12 @@
 }
 
 .nav .nav-item {
-	font-family: var(--nav-item-font-family); /* Set font family for nav items */
-	font-weight: var(--nav-item-font-weight); /* Set font weight for nav items */
-	font-size: var(--nav-item-font-size); /* Set font size for nav items */
-	letter-spacing: var(
-		--nav-item-letter-spacing
-	); /* Set letter spacing for nav items */
-	display: var(--nav-item-display); /* Set display type for nav items */
-	margin: var(--nav-item-margin); /* Set margin for nav items */
+	font-family: var(--nav-item-font-family);
+	font-weight: var(--nav-item-font-weight);
+	font-size: var(--nav-item-font-size);
+	letter-spacing: var(--nav-item-letter-spacing);
+	display: var(--nav-item-display);
+	margin: var(--nav-item-margin);
 }
 
 .nav .nav-link {
