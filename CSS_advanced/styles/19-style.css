@@ -1,0 +1,30 @@
+.navbar-menu {
+	float: right; /* Float navbar menu to the right */
+}
+
+.nav {
+	margin: 0; /* Reset margin */
+	padding: 0; /* Reset padding */
+	list-style: none; /* Remove list style */
+	text-align: center; /* Center-align text */
+}
+
+.nav .nav-item {
+	font-family: var(--nav-item-font-family); /* Set font family for nav items */
+	font-weight: var(--nav-item-font-weight); /* Set font weight for nav items */
+	font-size: var(--nav-item-font-size); /* Set font size for nav items */
+	letter-spacing: var(
+		--nav-item-letter-spacing
+	); /* Set letter spacing for nav items */
+	display: var(--nav-item-display); /* Set display type for nav items */
+	margin: var(--nav-item-margin); /* Set margin for nav items */
+}
+
+.nav .nav-link {
+	display: block; /* Display nav links as blocks */
+	padding: calc(var(--font-size-medium) / 2) var(--font-size-medium); /* Set padding for nav links */
+}
+
+.nav .nav-link:hover {
+	color: var(--nav-item-link-hover); /* Change color on hover for nav links */
+}
