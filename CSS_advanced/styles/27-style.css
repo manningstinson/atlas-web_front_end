@@ -35,6 +35,10 @@
 	height: auto;
 }
 
+.section-hero {
+    background-size: 90rem auto;
+}
+
 .section-hero .section-title {
 	margin-bottom: 5rem;
 }
