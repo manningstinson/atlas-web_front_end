@@ -487,9 +487,7 @@ ul.row {
 
 .card-services a {
 	display: block; /* Render as block level elements */
-	padding: calc(
-		2 * var(--font-size-medium)
-	); /* Set padding to 2x the root element */
+	padding: 2rem;
 	background-color: var(--color-light-grey); /* Set background color */
 }
 
