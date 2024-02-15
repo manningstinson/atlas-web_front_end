@@ -77,14 +77,14 @@ nav .nav-link:hover:before {
 	color: var(--color-white);
 }
 
-nav .nav-link:before {
+.nav .nav-link::before {
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
 	background-color: var(--color-white);
 	width: 0;
-	height: 0; /* Change this line to height: 0; */
+	height: 0.2rem;
 }
 
 .nav .nav-item:hover .nav-link::before {
