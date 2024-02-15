@@ -457,66 +457,47 @@ ul.row {
 	display: table;
 	clear: both;
 }
-
 [class^="col-"] {
-	/* Float them to the left */
 	float: left;
 	padding: 0.5rem;
 }
-
 [data-section-theme="dark"] {
+	background-color: var(--color-black);
 	--text-color: var(--color-white);
 	--section-title-color: var(--color-white);
-	background: var(--color-black);
+	--button-color: var(--color-white);
 }
-
 .footer-address {
 	color: var(--text-color);
 }
-
 .social-link {
 	display: block;
 }
-
-.footer-address {
-	color: var(--text-color);
-}
-
-.social-link {
-	display: block;
-}
-
 .social-link > svg {
 	fill: var(--text-color);
 }
-
 .card-services .card-title {
-	margin: 0; /* Remove margin on all sides */
+	margin: 0;
 }
-
 .card-services a {
-	display: block; /* Render as block level elements */
+	display: block;
 	padding: 2rem;
-	background-color: var(--color-light-grey); /* Set background color */
+	background-color: var(--color-light-grey);
 }
-
 .card-services a:hover {
-	color: var(--color-white); /* Set foreground color */
-	background-color: var(--color-primary); /* Set background color */
-	text-decoration: none; /* Remove text decoration */
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	text-decoration: none;
 }
-
-/* Button Styles */
-a:active + .button {
+.button {
 	display: var(--button-display);
 	padding: var(--button-padding);
 	border: var(--button-border);
+	font-size: var(--button-font-size);
 	color: var(--button-color);
 	text-decoration: var(--button-text-decoration);
-	font-size: var(--button-font-size);
 }
-
-a:active + .button:hover {
+.button:hover {
 	color: var(--button-hover-color);
 	text-decoration: var(--button-hover-text-decoration);
 	background-color: var(--button-hover-background);
