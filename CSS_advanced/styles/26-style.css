@@ -1,0 +1,31 @@
+.card-testimonial {
+	text-align: center;
+}
+
+.card-testimonial .card-avatar {
+	border-radius: 50%;
+	width: 10rem; /* 10 times the root element's font size */
+	height: 10rem; /* 10 times the root element's font size */
+}
+
+.card-testimonial .card-quote cite {
+	display: block;
+	padding-top: 1rem; /* 1 times the root element's font size */
+	color: var(--color-primary);
+}
+
+.card-testimonial {
+	text-align: center;
+}
+
+.card-testimonial .card-avatar {
+	border-radius: 50%;
+	width: 10rem; /* 10 times the root element's font size */
+	height: 10rem; /* 10 times the root element's font size */
+}
+
+.card-testimonial .card-quote cite {
+	display: block;
+	padding-top: 1rem; /* 1 times the root element's font size */
+	color: var(--color-primary);
+}
