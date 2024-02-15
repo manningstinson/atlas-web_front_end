@@ -413,7 +413,7 @@ a:active {
 	font-family: var(--nav-item-font-family);
 	font-weight: var(--nav-item-font-weight);
 	font-size: var(--nav-item-font-size);
-	letter-spacing: var(--nav-item-letter-spacing); /* Fixed */
+	letter-spacing: var(--nav-item-letter-spacing);
 	display: var(--nav-item-display);
 	margin: var(--nav-item-margin);
 }
@@ -422,20 +422,13 @@ a:active {
 	padding: 0.5rem 1rem;
 }
 .nav .nav-link:hover {
-	color: var(--nav-item-link-hover); /* Fixed */
+	color: var(--nav-item-link-hover);
 }
 ul.row {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-
-.row + .row::after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 .col-1-3 {
 	width: 33.33%;
 	float: left;
@@ -453,4 +446,9 @@ ul.row {
 }
 .footer ul {
 	text-align: right;
+}
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
 }
