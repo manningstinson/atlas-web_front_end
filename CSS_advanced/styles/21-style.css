@@ -456,6 +456,5 @@ ul.row {
 [class^="col-"] {
 	/* Float them to the left */
 	float: left;
-	/* Set their padding to half of the root element */
-	padding: calc(var(--font-size-medium) / 2);
+	padding: 0.5rem;
 }
