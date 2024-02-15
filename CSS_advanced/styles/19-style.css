@@ -413,7 +413,7 @@ a:active {
 	font-family: var(--nav-item-font-family);
 	font-weight: var(--nav-item-font-weight);
 	font-size: var(--nav-item-font-size);
-	letter-spacing: var(--nav-item-letter-spacing);
+	letter-spacing: var(--nav-item-letter-spacing); /* Fixed */
 	display: var(--nav-item-display);
 	margin: var(--nav-item-margin);
 }
@@ -422,7 +422,7 @@ a:active {
 	padding: 0.5rem 1rem;
 }
 .nav .nav-link:hover {
-	color: var(--nav-item-link-hover);
+	color: var(--nav-item-link-hover); /* Fixed */
 }
 ul.row {
 	margin: 0;
