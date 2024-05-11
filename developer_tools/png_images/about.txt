@@ -1,0 +1,1 @@
+This directory is for tasks that required .png or .jpg images in screenshots. 
