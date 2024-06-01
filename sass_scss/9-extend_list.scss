@@ -1,0 +1,22 @@
+/* 
+  Assign font size to all tags of class .info 
+*/
+.info {
+  font-size: 12px;
+}
+
+/* 
+  Assign text color and extend style of class .info to all tags of class .success 
+*/
+.success {
+  @extend .info;
+  color: #00ff00;
+}
+
+/* 
+  Assign text color and extend style of class .info to all tags of class .warning 
+*/
+.warning {
+  @extend .info;
+  color: #ff0000;
+}
