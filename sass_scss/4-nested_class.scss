@@ -1,0 +1,9 @@
+// Assign text color to elements inside body tags
+body {
+  color: #3d3d3d;
+
+  // Assign text color to any elements of class .red inside body tags
+  .red {
+    color: #ff0000;
+  }
+}
