@@ -1,0 +1,10 @@
+/* 11-loop_photos.scss */
+/* Import the list of names from 11-photos.scss */
+@import "11-photos";
+
+/* Use @each to loop through each name in the list and create a class */
+@each $name in $list-names {
+  .photo-#{$name} {
+    background: image-url("photos/#{$name}.jpg") no-repeat;
+  }
+}
