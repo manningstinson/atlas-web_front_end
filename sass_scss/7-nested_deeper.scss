@@ -1,0 +1,20 @@
+/* 
+  Assign font size to body tags 
+*/
+body {
+  font-size: 14px; // This sets the font size of all <body> tags to 14px.
+
+  /* 
+    Assign font size to h1 tags inside body tags 
+  */
+  h1 {
+    font-size: 16px; // This sets the font size of all <h1> tags inside <body> tags to 16px.
+
+    /* 
+      Assign font size to h1 tags of class .smaller inside body tags 
+    */
+    &.smaller {
+      font-size: 12px; // This sets the font size of <h1> tags with the class .smaller inside <body> tags to 12px.
+    }
+  }
+}
