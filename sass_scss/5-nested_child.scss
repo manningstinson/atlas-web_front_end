@@ -1,0 +1,22 @@
+/* 
+  Assign text color to elements inside body tags 
+*/
+body {
+  /* 
+    This sets the text color of all elements inside the <body> tag 
+    to #3D3D3D (dark gray).
+  */
+  color: #3d3d3d;
+
+  /* 
+    Assign text color to any elements of class .red that are the 
+    first children of the body 
+  */
+  > .red {
+    /* 
+      This sets the text color of any elements with the class .red 
+      that are direct children of the <body> tag to #FF0000 (red).
+    */
+    color: #ff0000;
+  }
+}
