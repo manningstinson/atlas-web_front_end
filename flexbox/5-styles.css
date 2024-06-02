@@ -270,7 +270,7 @@ h6 {
 }
 
 a {
-  color: var (--text-color);
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -283,23 +283,23 @@ a:hover {
 }
 
 a:active {
-  background-color: var (--color-light-grey);
+  background-color: var(--color-light-grey);
 }
 
 .button {
-  display: var (--button-display);
-  padding: var (--button-padding);
-  border: var (--button-border);
-  font-size: var (--button-font-size);
-  color: var (--button-color);
-  text-decoration: var (--button-text-decoration);
+  display: var(--button-display);
+  padding: var(--button-padding);
+  border: var(--button-border);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+  text-decoration: var(--button-text-decoration);
 }
 
 .button:hover {
-  color: var (--button-hover-color);
-  text-decoration: var (--button-hover-text-decoration);
-  background: var (--button-hover-background);
-  transition-duration: var (--transition-duration);
+  color: var(--button-hover-color);
+  text-decoration: var(--button-hover-text-decoration);
+  background: var(--button-hover-background);
+  transition-duration: var(--transition-duration);
   transition-property: color, background-color;
 }
 
@@ -365,12 +365,12 @@ ul.row {
 }
 
 .nav .nav-item {
-  font-family: var (--nav-item-font-family);
-  font-weight: var (--nav-item-font-weight);
-  font-size: var (--nav-item-font-size);
-  letter-spacing: var (--nav-item-letter-spacing);
-  display: var (--nav-item-display);
-  margin: var (--nav-item-margin);
+  font-family: var(--nav-item-font-family);
+  font-weight: var(--nav-item-font-weight);
+  font-size: var(--nav-item-font-size);
+  letter-spacing: var(--nav-item-letter-spacing);
+  display: var(--nav-item-display);
+  margin: var(--nav-item-margin);
 }
 
 .nav .nav-link {
@@ -380,7 +380,7 @@ ul.row {
 }
 
 .nav .nav-link:hover {
-  color: var (--nav-item-link-hover);
+  color: var(--nav-item-link-hover);
   text-decoration: none;
 }
 
@@ -389,14 +389,14 @@ ul.row {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: var (--color-white);
+  background-color: var(--color-white);
   width: 0;
   height: 0.2rem;
-  transition: var (--transition-duration) var (--transition-cubic-bezier);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .nav .nav-item:hover .nav-link::before {
-  background-color: var (--color-primary);
+  background-color: var(--color-primary);
   width: 100%;
 }
 
@@ -404,7 +404,7 @@ ul.row {
       ============================= */
 
 .header {
-  padding: var (--header-padding);
+  padding: var(--header-padding);
   position: relative;
   z-index: 3;
   background: transparent;
@@ -420,14 +420,14 @@ ul.row {
 
 .footer {
   --nav-item-font-weight: normal;
-  --nav-item-font-size: var (--font-size-small);
-  padding: var (--footer-padding);
+  --nav-item-font-size: var(--font-size-small);
+  padding: var(--footer-padding);
 }
 
 .footer-copyright {
   margin: 0;
-  font-size: var (--font-size-small);
-  color: var (--text-color);
+  font-size: var(--font-size-small);
+  color: var(--text-color);
 }
 
 .footer ul {
@@ -435,7 +435,7 @@ ul.row {
 }
 
 .footer-address {
-  color: var (--text-color);
+  color: var(--text-color);
 }
 
 .social-link {
@@ -443,7 +443,7 @@ ul.row {
 }
 
 .social-link > svg {
-  fill: var (--text-color);
+  fill: var(--text-color);
 }
 
 /*** 3. SECTION ***/
@@ -452,46 +452,46 @@ ul.row {
       ============================= */
 
 .section {
-  padding: var (--section-padding);
+  padding: var(--section-padding);
 }
 
 .section-header {
-  text-align: var (--section-header-align);
-  padding: var (--section-header-padding);
+  text-align: var(--section-header-align);
+  padding: var(--section-header-padding);
 }
 
 .section-title {
-  font-size: var (--section-title-font-size);
-  font-weight: var (--section-title-font-weight);
-  line-height: var (--section-title-line-height);
-  margin: var (--section-title-margin);
-  color: var (--section-title-color);
+  font-size: var(--section-title-font-size);
+  font-weight: var(--section-title-font-weight);
+  line-height: var(--section-title-line-height);
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
 }
 
 .section-tagline {
-  color: var (--section-tagline-color);
-  font-family: var (--section-tagline-font-family);
-  text-transform: var (--section-tagline-transform);
-  font-weight: var (--section-tagline-font-weight);
-  margin: var (--section-tagline-margin);
+  color: var(--section-tagline-color);
+  font-family: var(--section-tagline-font-family);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--section-tagline-font-weight);
+  margin: var(--section-tagline-margin);
 }
 
 .section-body {
-  padding: var (--section-body-padding);
+  padding: var(--section-body-padding);
 }
 
 .section-footer {
-  padding: var (--section-footer-padding);
-  text-align: var (--section-footer-align);
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
 }
 
 /* Section theming
       ============================= */
 
 [data-section-theme="dark"] {
-  --button-color: var (--color-white);
-  --text-color: var (--color-white);
-  --section-title-color: var (--color-white);
+  --button-color: var(--color-white);
+  --text-color: var(--color-white);
+  --section-title-color: var(--color-white);
   background-color: #010101;
 }
 
@@ -533,7 +533,7 @@ ul.row {
       ============================= */
 
 .card-category {
-  color: var (--color-primary);
+  color: var(--color-primary);
 }
 
 /* Card WORK
@@ -557,7 +557,7 @@ ul.row {
 
 .card-work:hover .card-image {
   transform: scale(1.2);
-  transition: var (--transition-duration) var (--transition-cubic-bezier);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work .card-inner {
@@ -567,7 +567,7 @@ ul.row {
   right: -0.1rem;
   bottom: -0.1rem;
   z-index: 1;
-  transition: var (--transition-duration) var (--transition-cubic-bezier);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-inner {
@@ -611,12 +611,12 @@ ul.row {
 .card-services a {
   display: block;
   padding: 2rem;
-  background-color: var (--color-light-grey);
+  background-color: var(--color-light-grey);
 }
 
 .card-services a:hover {
-  color: var (--color-white);
-  background: var (--color-primary);
+  color: var(--color-white);
+  background: var(--color-primary);
   text-decoration: none;
   transition-duration: 0.3s;
   transition-property: color, background-color;
@@ -638,7 +638,7 @@ ul.row {
 .card-testimonial .card-quote cite {
   display: block;
   padding-top: 1rem;
-  color: var (--color-primary);
+  color: var(--color-primary);
 }
 
 .card-testimonial .card-quote {
