@@ -1,28 +1,19 @@
 /* Card WORK section */
-/* If these rules exist, remove them */
 .card-work .card-title {
-  /* Remove this rule if it exists */
+  /* Initially, no opacity setting here */
 }
 
-.card-work:hover .card-inner {
-  /* Remove this rule if it exists */
-}
-
-.card-work:hover .card-title {
-  /* Remove this rule if it exists */
-}
-
-/* Add the correct styles for focus and hover states */
+/* Add necessary styles for focus and hover states */
 .card-work .card-title a {
-  opacity: 0;
+  opacity: 0; /* Initially hidden */
   transition: opacity 0.3s, height 0.3s, background-color 0.3s;
 }
 
 .card-work .card-title a:focus,
 .card-work:hover .card-title a {
-  opacity: 1;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1; /* Visible on focus or hover */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background */
 }
 
 /* Ensure other elements have a blue outline on focus */
