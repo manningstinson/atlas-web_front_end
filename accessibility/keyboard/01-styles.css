@@ -1,0 +1,35 @@
+/* Remove the following styles if they exist */
+.card-work .card-title {
+  opacity: 0;
+}
+
+.card-work:hover .card-inner {
+  /* Remove this rule */
+}
+
+.card-work:hover .card-title {
+  /* Remove this rule */
+}
+
+/* Add these styles */
+.card-work .card-title a {
+  opacity: 0;
+  transition: opacity 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.card-work .card-title a:focus,
+.card-work:hover .card-title a {
+  opacity: 1;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Ensure other elements have a blue outline on focus */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
