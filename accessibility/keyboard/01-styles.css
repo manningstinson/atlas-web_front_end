@@ -1,6 +1,6 @@
 /* Card WORK section */
 .card-work .card-title {
-  opacity: 0;
+  opacity: 1;
   /* Initially, no opacity setting here */
 }
 
