@@ -1,10 +1,18 @@
 /* Card WORK section */
-/* Ensure that any existing rules for .card-work .card-title are removed */
+/* If these rules exist, remove them */
 .card-work .card-title {
-  /* Remove any existing styles related to opacity or hover effects here */
+  /* Remove this rule if it exists */
 }
 
-/* Add the necessary styles for focus and hover states */
+.card-work:hover .card-inner {
+  /* Remove this rule if it exists */
+}
+
+.card-work:hover .card-title {
+  /* Remove this rule if it exists */
+}
+
+/* Add the correct styles for focus and hover states */
 .card-work .card-title a {
   opacity: 0;
   transition: opacity 0.3s, height 0.3s, background-color 0.3s;
