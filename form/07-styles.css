@@ -108,6 +108,10 @@ textarea:focus {
   --color-dark-grey: #333333;
   --color-red: #cd3e65;
   --color-green: #08805b;
+  --color-white: #ffffff;
+  --color-grey: #cccccc;
+  --color-light-grey: #f0f0f0;
+  --color-primary: #007bff;
   --valid-color: var(--color-green);
   --error-color: var(--color-red);
 }
