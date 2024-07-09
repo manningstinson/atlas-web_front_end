@@ -18,9 +18,9 @@ function countPrimeNumbers() {
   return primeCount;
 }
 
-const start = performance.now();
-const primeCount = countPrimeNumbers();
-const end = performance.now();
+const start = performance.now(); // Start timing
+const primeCount = countPrimeNumbers(); // Count primes
+const end = performance.now(); // End timing
 
 console.log(
   `Execution time of printing countPrimeNumbers was ${

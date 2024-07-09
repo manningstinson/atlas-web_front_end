@@ -19,3 +19,8 @@ const createClassRoom = (numbersOfStudents) => {
 
 // Create a closure classRoom, calling createClassRoom with 10 students
 const classRoom = createClassRoom(10);
+
+// Test the closure by calling the functions in the classRoom array and logging the results
+for (let i = 0; i < classRoom.length; i++) {
+  console.log(`Student ${i + 1} seat number:`, classRoom[i]());
+}

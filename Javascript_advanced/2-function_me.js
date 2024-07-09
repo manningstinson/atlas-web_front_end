@@ -1,8 +1,8 @@
 // Write a function named welcomeMessage
 const welcomeMessage = (fullName) => {
-  // It should be a closure for an alert displaying Welcome <fullName>
+  // It should be a closure for a console.log displaying Welcome <fullName>
   return () => {
-    alert(`Welcome ${fullName}`);
+    console.log(`Welcome ${fullName}`);
   };
 };
 
@@ -10,3 +10,8 @@ const welcomeMessage = (fullName) => {
 const guillaume = welcomeMessage("Guillaume");
 const alex = welcomeMessage("Alex");
 const fred = welcomeMessage("Fred");
+
+// Test the closures by calling them
+guillaume();
+alex();
+fred();

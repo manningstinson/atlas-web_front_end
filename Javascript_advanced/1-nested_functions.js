@@ -3,23 +3,23 @@ const globalVariable = "Welcome";
 
 // Create a function outer
 const outer = () => {
-  // Alert the content of the variable globalVariable
-  alert(globalVariable);
+  // Log the content of the variable globalVariable
+  console.log(globalVariable);
 
   // Create a variable named course with value Holberton
   const course = "Holberton";
 
   // Create a function inner
   const inner = () => {
-    // Alert the content of the variable globalVariable and course (concatenated)
-    alert(`${globalVariable} ${course}`);
+    // Log the content of the variable globalVariable and course (concatenated)
+    console.log(`${globalVariable} ${course}`);
 
     // Create a variable named exclamation with value !
     const exclamation = "!";
 
-    // Create a function inception that alerts the content of the variable globalVariable, course, and exclamation (concatenated)
+    // Create a function inception that logs the content of the variable globalVariable, course, and exclamation (concatenated)
     const inception = () => {
-      alert(`${globalVariable} ${course}${exclamation}`);
+      console.log(`${globalVariable} ${course}${exclamation}`);
     };
 
     // Call the function inception

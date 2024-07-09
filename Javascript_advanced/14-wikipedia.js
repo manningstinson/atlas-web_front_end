@@ -1,25 +1,24 @@
+const axios = require("axios");
+
 function createElement(data) {
-  const paragraph = document.createElement("p");
-  paragraph.textContent = data;
-  document.body.appendChild(paragraph);
+  console.log(data); // In Node.js, we use console.log instead of manipulating the DOM
 }
 
 function queryWikipedia(callback) {
-  const xhr = new XMLHttpRequest();
   const url =
     "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=Stack%20Overflow&origin=*";
 
-  xhr.open("GET", url, true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      const response = JSON.parse(xhr.responseText);
-      const page = response.query.pages;
+  axios
+    .get(url)
+    .then((response) => {
+      const page = response.data.query.pages;
       const pageId = Object.keys(page)[0];
       const extract = page[pageId].extract;
       callback(extract);
-    }
-  };
-  xhr.send();
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    });
 }
 
 queryWikipedia(createElement);
