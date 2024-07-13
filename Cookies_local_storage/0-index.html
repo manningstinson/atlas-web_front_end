@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Management</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      h1,
+      h2 {
+        font-weight: bold;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        margin-top: 40px;
+        font-size: 1.5em;
+      }
+      input[type="text"] {
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 200px;
+      }
+      button {
+        padding: 10px 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #f0f0f0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+    </style>
+    <script>
+      function setCookies() {
+        const firstname = document.getElementById("firstname").value;
+        const email = document.getElementById("email").value;
+        document.cookie = `firstname=${firstname}; path=/`;
+        document.cookie = `email=${email}; path=/`;
+      }
+
+      function showCookies() {
+        const cookies = document.cookie;
+        const p = document.createElement("p");
+        p.innerHTML = `Cookies: ${cookies}`;
+        document.body.appendChild(p);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login to the website</h1>
+      <div class="form-group">
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="Firstname"
+        />
+        <input type="text" id="email" name="email" placeholder="Email" />
+        <button onclick="setCookies()">Log me in</button>
+      </div>
+      <h2>Cookies</h2>
+      <button onclick="showCookies()">Show the cookies</button>
+    </div>
+  </body>
+</html>
