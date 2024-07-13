@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2em;
+        font-weight: bold;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #f9f9f9;
+      }
+      li:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+    <script>
+      const availableItems = ["Shampoo", "Soap", "Sponge", "Water"];
+
+      function addItemToCart(item) {
+        localStorage.setItem(item, "true");
+        displayCart();
+      }
+
+      function createStore() {
+        const ul = document.createElement("ul");
+        availableItems.forEach((item) => {
+          const li = document.createElement("li");
+          li.textContent = item;
+          li.onclick = () => addItemToCart(item);
+          ul.appendChild(li);
+        });
+        document.body.appendChild(ul);
+      }
+
+      function displayCart() {
+        const cartItems = Object.keys(localStorage).filter(
+          (key) => localStorage.getItem(key) === "true"
+        );
+        const existingMessage = document.getElementById("cart-message");
+        if (existingMessage) {
+          existingMessage.remove();
+        }
+        if (cartItems.length > 0) {
+          const p = document.createElement("p");
+          p.id = "cart-message";
+          p.textContent = `You previously had ${cartItems.length} item(s) in your cart`;
+          document.body.appendChild(p);
+        }
+      }
+
+      window.onload = function () {
+        if (typeof Storage === "undefined") {
+          alert(
+            "Sorry, your browser does not support Web storage. Try again with a better one"
+          );
+          return;
+        }
+        createStore();
+        displayCart();
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+  </body>
+</html>
